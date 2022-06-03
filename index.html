@@ -16,7 +16,8 @@
 
     <!-- ====== main style start ====== -->
     <link rel="shortcut icon" href="images/favicon.png">
-    <!-- CSS only -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -24,44 +25,39 @@
 </head>
 
 <body>
-    <!-- ====== topbar Start ====== -->
+    <!-- ====== top bar Start ====== -->
     <section id="topbar">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="topbar-box-left">
                         <ul>
-                            <li class="d-inline-block align-middle">
+                            <li>
                                 <p>Follow Us</p>
                             </li>
-                            <li class="d-inline-block align-middle"><a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li class="d-inline-block align-middle"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="d-inline-block align-middle"><a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="d-inline-block align-middle"><a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            </li>
-                            <li class="d-inline-block align-middle"><a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="topbar-box-right">
-                        <a class="d-inline-block align-middle" href="#" callto="+0123 456 123456"><i
-                                class="fas fa-phone d-inline-block align-middle"></i>+0123 456 123456</a>
+                        <a href="#" callto="+0123 456 123456"><i class="fas fa-phone"></i>+0123 456 123456</a>
                         <span>|</span>
-                        <a class="d-inline-block align-middle" href="#" mailto="support@you.yours.com"><i
-                                class="fas fa-envelope d-inline-block align-middle"></i>support@you.yours.com</a>
+                        <a href="#" mailto="support@you.yours.com"><i
+                                class="fas fa-envelope"></i>support@you.yours.com</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ====== topbar End ====== -->
+    <!-- ====== top bar End ====== -->
 
-    <!-- ====== Nabbar Start ====== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- ====== Navbar Start ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/logo.png" alt="pic" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -74,13 +70,11 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Hosting
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -91,40 +85,263 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Domain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Service</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active position-relative d-flex flex-column justify-content-center align-items-center"
+                            aria-current="page" href="#">
+                            <span class="text-secondary position-absolute" id="profile-icon-bar"></span>
+                            <span class="p-1 rounded-pill border border-2 border-dark position-absolute"
+                                id="profile-icon">
+                                <i class="fas fa-user-alt p-2 bg-info rounded-pill"></i></span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fas fa-cart-arrow-down"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- ====== Navbar End ====== -->
 
+    <!-- ====== Banner Part Start ====== -->
+
+    <section class="py-5 bg-gray">
+        <div class="row container mx-auto pt-5">
+            <div class="col-7 d-flex align-items-center">
+                <div>
+                    <h1>Build Your Dream Website</h1>
+                    <h1>With OMRhost</h1>
+                    <p class="my-4 pe-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aut in eum
+                        sapiente, eius ea! Recusandae illo optio, quas totam ad magnam reprehenderit praesentium
+                        molestiae soluta unde, rerum porro.</p>
+                    <button class="btn btn-primary">
+                        Learn More
+                        <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-5">
+                <img src="/images/banner-img.png" alt="banner-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Banner Part End ====== -->
+
+
     <!-- ====== Pricing Plan Start ====== -->
-    <section id="pricing">
+    <section id="pricing" class="bg-gray text-center">
+
+        <small>Choose Your Best Pricing Package</small>
+        <h1 class="mb-5 mt-2">Pricing Plan</h1>
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="pricing-wrapper text-center">
-                        <div class="pricing-top">
-                            <h5>Shared Hosting</h5>
-                            <span>Starting At</span>
-                            <p>$ 15.99/m</p>
-                            <div class="circle-icon">
-                                <i class="fas fa-server"></i>
-                                <img src="images/half-circle.png" alt="pic" class="img-fluid halfCircle">
-                            </div>
-                        </div>
-                        <div class="pricing-bottom">
 
+                <div class="col-lg-4 px-3">
+                    <div class="shadow rounded rounded-3">
+                        <div class="pricing-wrapper">
+                            <div class="pricing-top">
+                                <h5 class="mb-2">Shared Hosting</h5>
+                                <small class="fst-italic">Starting At</small>
+                                <h3>$ 15.99/m</h3>
+                                <div class="circle-icon">
+                                    <i class="fas fa-server"></i>
+                                    <img src="images/half-circle.png" alt="pic" class="img-fluid halfCircle">
+                                </div>
+                            </div>
+                            <div class="mt-5 pt-3 text-center text-muted pb-3">
+                                <ul class="p-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-window-close"></i>
+                                        Installation Charge
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        2 GB DDR3 RAM
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        20 GB SSD Cloud Storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Weekly Backup
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        24/7/365 Tech Support
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Full Root Access
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        DDoS Protection
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        30 Day Money Back Guarantee
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary my-3">Order Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-lg-4 px-3">
+                    <div class="shadow rounded rounded-3">
+                        <div class="pricing-wrapper">
+                            <div class="pricing-top bg-primary">
+                                <h5 class="mb-2">Reseller Hosting</h5>
+                                <small class="fst-italic">Starting At</small>
+                                <h3>$ 25.99/m</h3>
+                                <div class="circle-icon bg-primary">
+                                    <i class="fas fa-server"></i>
+                                    <img src="images/half-circle.png" alt="pic" class="img-fluid halfCircle">
+                                </div>
+                            </div>
+
+                            <div class="mt-5 pt-3 text-center text-muted pb-3">
+                                <ul class="p-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-window-close"></i>
+                                        Installation Charge
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        2 GB DDR3 RAM
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        20 GB SSD Cloud Storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Weekly Backup
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        24/7/365 Tech Support
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Full Root Access
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        DDoS Protection
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        30 Day Money Back Guarantee
+                                    </li>
+                                </ul>
+                                <button style="background: #000; color: white;" class="btn my-3">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 px-3">
+                    <div class="shadow rounded rounded-3">
+                        <div class="pricing-wrapper">
+                            <div class="pricing-top">
+                                <h5 class="mb-2">Dedicated Hosting</h5>
+                                <small class="fst-italic">Starting At</small>
+                                <h3>$ 85.99/m</h3>
+                                <div class="circle-icon">
+                                    <i class="fas fa-server"></i>
+                                    <img src="images/half-circle.png" alt="pic" class="img-fluid halfCircle">
+                                </div>
+                            </div>
+                            <div class="mt-5 pt-3 text-center text-muted pb-3">
+                                <ul class="p-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-window-close"></i>
+                                        Installation Charge
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        2 GB DDR3 RAM
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        20 GB SSD Cloud Storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Weekly Backup
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        24/7/365 Tech Support
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        Full Root Access
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        DDoS Protection
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-square"></i>
+                                        30 Day Money Back Guarantee
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary my-3">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- ====== Pricing Plan End ====== -->
 
     <!-- ====== JS link Start ====== -->
-    <!--    <script src="js/jquery-3.3.1.min.js"></script>-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
     <!-- ====== JS link End ====== -->
 </body>

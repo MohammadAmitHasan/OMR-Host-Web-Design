@@ -145,6 +145,10 @@ p {
   font-weight: 400;
 }
 
+.bg-gray {
+  background-color: rgb(242, 242, 242);
+}
+
 .clr {
   clear: both;
 }
@@ -192,21 +196,7 @@ p {
 }
 
 /* ==== All-header ==== */
-/* ==== All-button ==== */
-.btn {
-  font-size: 15px;
-  font-weight: 600;
-  color: #000000;
-  border: 2px outset #e2a236;
-  padding: 12px 5px;
-  border-radius: 0px;
-  max-width: 155px;
-  width: 100%;
-  background: #ca6e05;
-}
-
-/* ==== All-button ==== */
-/* ==== Topbar ==== */
+/* ==== Top bar ==== */
 #topbar {
   background: #151414;
   padding: 13px 0px;
@@ -215,6 +205,8 @@ p {
 }
 
 #topbar .topbar-box-left ul li {
+  display: inline-block;
+  vertical-align: middle;
   padding-right: 10px;
   font-size: inherit;
 }
@@ -247,24 +239,57 @@ p {
 }
 
 #topbar .topbar-box-right a {
+  display: inline-block;
+  vertical-align: middle;
   color: inherit;
   font-size: inherit;
   font-family: 'Lato', sans-serif;
 }
 
 #topbar .topbar-box-right a i {
+  display: inline-block;
+  vertical-align: middle;
   font-size: inherit;
   padding-right: 8px;
 }
 
 #topbar .topbar-box-right span {
+  display: inline-block;
+  vertical-align: middle;
   padding: 0px 8px;
 }
 
-/* ==== Topbar ==== */
+/* ==== Top bar ==== */
+
+
+.navbar-nav li a {
+  border-top: 1px solid #FAF9F8;
+  padding: 20px 15px !important;
+}
+
+.navbar-nav li a:hover {
+  color: rgb(92, 178, 234) !important;
+  border-top: 1px solid rgb(92, 178, 234);
+}
+
+#profile-icon {
+  top: 100%;
+}
+
+#profile-icon-bar {
+  width: 1.5px;
+  height: 25px;
+  background-color: #DCDCDC;
+}
+
+
 /* ==== pricing ==== */
 #pricing {
   padding: 100px 0px;
+}
+
+#pricing .pricing-wrapper {
+  text-align: center;
 }
 
 #pricing .pricing-wrapper .pricing-top {
