@@ -149,6 +149,10 @@ p {
   background-color: rgb(242, 242, 242);
 }
 
+.bg-black {
+  background: #000000;
+}
+
 .clr {
   clear: both;
 }
@@ -261,7 +265,7 @@ p {
 
 /* ==== Top bar ==== */
 
-
+/* ==== Navbar ==== */
 .navbar-nav li a {
   border-top: 1px solid #FAF9F8;
   padding: 20px 15px !important;
@@ -281,6 +285,22 @@ p {
   height: 25px;
   background-color: #DCDCDC;
 }
+
+
+
+/* ==== Features ==== */
+.feature-icon-container {
+  width: 50px;
+  /* pe-5 pb-2 border-bottom border-2 border-primary */
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #119EE6;
+  color: #119EE6;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* ==== Features ==== */
 
 
 /* ==== pricing ==== */
@@ -345,6 +365,7 @@ p {
 }
 
 /* ==== pricing ==== */
+
 /* ==== Responsive Start ==== */
 /* ==== Responsive End ==== */
 
