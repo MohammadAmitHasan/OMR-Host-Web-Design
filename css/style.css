@@ -549,6 +549,71 @@ p {
 }
 
 /* ==== Offers ==== */
+/* ==== Why Choose Us ==== */
+#reasons-container {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+#reasons-container div {
+  padding: 15px;
+  color: #fff;
+}
+
+.reason-container:hover {
+  background-color: #000 !important;
+}
+
+#reasons-container .reason-container .reason-serial {
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.2;
+  top: 20px;
+  right: 10px;
+}
+
+#reasons-container .reason-container .reason-serial-left {
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.2;
+  top: 40px;
+  left: 10px;
+}
+
+/* ==== Why Choose Us ==== */
 /* ==== Responsive Start ==== */
+@media only screen and (min-width: 576px) {
+  #reasons-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #reasons-container {
+    -ms-grid-columns: (1fr)[14];
+        grid-template-columns: repeat(14, 1fr);
+  }
+  #reasons-container div:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 5;
+  }
+  #reasons-container div:nth-child(2) {
+    grid-column: span 4;
+  }
+  #reasons-container div:nth-child(3) {
+    grid-column: span 5;
+  }
+  #reasons-container div:nth-child(4) {
+    grid-column: span 5;
+  }
+  #reasons-container div:nth-child(5) {
+    grid-column: span 4;
+  }
+}
+
 /* ==== Responsive End ==== */
 /*# sourceMappingURL=style.css.map */
