@@ -280,8 +280,8 @@ p {
 }
 
 /* ==== Features ==== */
-/* ==== finddomain ==== */
-.finddomain {
+/* ==== building-bg ==== */
+.building-bg {
   background: url(../images/findurDomainbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,7 +291,7 @@ p {
   padding: 120px 0px;
 }
 
-.finddomain:after {
+.building-bg:after {
   position: absolute;
   content: '';
   top: 0px;
@@ -301,12 +301,12 @@ p {
   background: rgba(0, 0, 0, 0.95);
 }
 
-.finddomain .finddomain-wrap {
+.building-bg .building-bg-wrap {
   position: relative;
   z-index: 9;
 }
 
-/* ==== finddomain ==== */
+/* ==== building-bg ==== */
 /* ==== Hosting ==== */
 #hosting .hosting-wrap {
   background: #119ee6;
@@ -421,13 +421,15 @@ p {
 
 #pricing .pricing-wrapper {
   text-align: center;
+  max-width: 348px;
+  margin: 0 auto;
 }
 
 #pricing .pricing-wrapper .pricing-top {
   position: relative;
   color: #ffffff;
   background: #000000;
-  padding: 0px 0px 60px;
+  padding: 0px 0px 50px;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
 }
@@ -486,6 +488,67 @@ p {
 }
 
 /* ==== pricing ==== */
+/* ==== Stat ==== */
+.stat-container {
+  width: 260px;
+  -webkit-transform: skewX(-18deg);
+          transform: skewX(-18deg);
+  border-right: 2px solid #0d6dfd85;
+  margin: 0 auto;
+}
+
+.stat-data {
+  -webkit-transform: skewX(18deg);
+          transform: skewX(18deg);
+  margin: 0 60px;
+}
+
+.bg-icon {
+  position: absolute;
+  opacity: 0.2;
+  font-size: 55px;
+  top: -20px;
+}
+
+/* ==== Stat ==== */
+/* ==== Offers ==== */
+#offer-icons {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+}
+
+.offer-icon-container {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.123);
+  font-size: 20px;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+
+.offer-icon-container:hover {
+  border-bottom: 2px solid #0D6EFD;
+  color: #0D6EFD;
+}
+
+#learn-more-btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#learn-more-btn:hover {
+  color: #0D6EFD;
+}
+
+/* ==== Offers ==== */
 /* ==== Responsive Start ==== */
 /* ==== Responsive End ==== */
 /*# sourceMappingURL=style.css.map */
