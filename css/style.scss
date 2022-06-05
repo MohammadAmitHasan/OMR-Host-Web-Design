@@ -150,6 +150,11 @@ p {
     background-color: rgb(242, 242, 242);
 }
 
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .bg-black {
     background: #000000;
 }
@@ -311,7 +316,6 @@ p {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding: 120px 0px;
 
     &:after {
         position: absolute;
@@ -438,9 +442,6 @@ p {
 
 
 /* ==== pricing ==== */
-#pricing {
-    padding: 100px 0px;
-}
 
 #pricing .pricing-wrapper {
     text-align: center;
@@ -517,7 +518,6 @@ p {
 
 /* ==== Stat ==== */
 .stat-container {
-    width: 260px;
     transform: skewX(-18deg);
     border-right: 2px solid #0d6dfd85;
     margin: 0 auto;
@@ -526,7 +526,7 @@ p {
 .stat-data {
     transform: skewX(18deg);
     margin: 0 60px;
-    // position: relative;
+    position: relative;
 }
 
 .bg-icon {
@@ -607,6 +607,21 @@ p {
 }
 
 /* ==== Why Choose Us ==== */
+
+/* ==== Client Says ==== */
+.client-quote {
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    font-size: 35px;
+    opacity: 0.15;
+}
+
+.stars {
+    opacity: 0.3;
+}
+
+/* ==== Client Says ==== */
 
 /* ==== Responsive Start ==== */
 @media only screen and (min-width: 576px) {

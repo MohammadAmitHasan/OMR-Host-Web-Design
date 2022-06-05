@@ -134,6 +134,11 @@ p {
   background-color: #f2f2f2;
 }
 
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .bg-black {
   background: #000000;
 }
@@ -288,7 +293,6 @@ p {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding: 120px 0px;
 }
 
 .building-bg:after {
@@ -415,10 +419,6 @@ p {
 
 /* ==== Hosting ==== */
 /* ==== pricing ==== */
-#pricing {
-  padding: 100px 0px;
-}
-
 #pricing .pricing-wrapper {
   text-align: center;
   max-width: 348px;
@@ -490,7 +490,6 @@ p {
 /* ==== pricing ==== */
 /* ==== Stat ==== */
 .stat-container {
-  width: 260px;
   -webkit-transform: skewX(-18deg);
           transform: skewX(-18deg);
   border-right: 2px solid #0d6dfd85;
@@ -501,6 +500,7 @@ p {
   -webkit-transform: skewX(18deg);
           transform: skewX(18deg);
   margin: 0 60px;
+  position: relative;
 }
 
 .bg-icon {
@@ -584,6 +584,20 @@ p {
 }
 
 /* ==== Why Choose Us ==== */
+/* ==== Client Says ==== */
+.client-quote {
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  font-size: 35px;
+  opacity: 0.15;
+}
+
+.stars {
+  opacity: 0.3;
+}
+
+/* ==== Client Says ==== */
 /* ==== Responsive Start ==== */
 @media only screen and (min-width: 576px) {
   #reasons-container {
