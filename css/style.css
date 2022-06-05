@@ -310,6 +310,11 @@ p {
   z-index: 9;
 }
 
+#domain-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* ==== building-bg ==== */
 /* ==== Hosting ==== */
 #hosting .hosting-wrap {
