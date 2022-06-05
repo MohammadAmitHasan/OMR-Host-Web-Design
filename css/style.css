@@ -598,6 +598,26 @@ p {
 }
 
 /* ==== Client Says ==== */
+/* ==== Footer ==== */
+#footer {
+  background-color: #151414;
+}
+
+.hover:hover {
+  color: #119EE6 !important;
+}
+
+#footer a {
+  color: #aaaaaa;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#footer a:hover {
+  color: #119EE6;
+}
+
+/* ==== Footer ==== */
 /* ==== Responsive Start ==== */
 @media only screen and (min-width: 576px) {
   #reasons-container {
